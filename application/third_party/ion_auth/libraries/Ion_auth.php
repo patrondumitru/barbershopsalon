@@ -56,7 +56,7 @@ class Ion_auth
 	 */
 	public function __construct()
 	{
-		$this->config->load('ion_auth', TRUE);
+		$this->load->config('ion_auth', TRUE);
 		$this->load->library(array('email'));
 		$this->lang->load('ion_auth');
 		$this->load->helper(array('cookie', 'language','url'));
@@ -443,7 +443,7 @@ class Ion_auth
 	{
 		$this->ion_auth_model->trigger_events('logged_in');
 
-        return $this->ion_auth_model->recheck_session();
+		return (bool) $this->session->userdata('identity');
 	}
 
 	/**

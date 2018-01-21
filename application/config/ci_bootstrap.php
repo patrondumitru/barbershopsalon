@@ -15,7 +15,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $config['ci_bootstrap'] = array(
 
 	// Site name
-	'site_name' => 'Peter\'s Barbershop',
+	'site_name' => 'Peter\'s Barbershop ',
 
 	// Default page title prefix
 	'page_title_prefix' => 'Peter\'s Barbershop - ',
@@ -25,9 +25,9 @@ $config['ci_bootstrap'] = array(
 
 	// Default meta data
 	'meta_data'	=> array(
-		'author'		=> 'Dumitru Patron (https://github.com/patrondumitru)',
-		'description'	=> 'Peter\'s Barbershop',
-		'keywords'		=> 'Peter\'s Barbershop'
+		'author'		=> '',
+		'description'	=> '',
+		'keywords'		=> ''
 	),
 
 	// Default scripts to embed at page head or end
