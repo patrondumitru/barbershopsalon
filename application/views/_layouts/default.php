@@ -1,10 +1,35 @@
-<?php $this->load->view('_partials/navbar'); ?>
+<?php $this->load->view('_partials/banner'); ?>
 
-<div class="container">
-	<div class="page-header"><h1><?php echo $page_title; ?></h1></div>
-	<section class="content">
-		<?php $this->load->view($inner_view); ?>
-	</section>
-</div>
+
+<?php $this->load->view('_partials/about'); ?>
+
+
+<?php $this->load->view('_partials/price'); ?>
+
+
+<?php $this->load->view('_partials/ourstyle'); ?>
+
+
+<?php $this->load->view('_partials/gallery'); ?>
+
+
+<?php $this->load->view('_partials/clients'); ?>
+
+<?php $this->load->view('_partials/address'); ?>
+
+<?php $this->load->view('_partials/contact'); ?>
+
+
+
+		
+		
+		
+		
+		
+<?php $this->load->view($inner_view); ?>
+
+		
+		
+		
 
 <?php $this->load->view('_partials/footer'); ?>

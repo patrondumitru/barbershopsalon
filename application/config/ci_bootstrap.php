@@ -5,9 +5,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | -------------------------------------------------------------------------
 | CI Bootstrap 3 Configuration
 | -------------------------------------------------------------------------
-| This file lets you define default values to be passed into views 
-| when calling MY_Controller's render() function. 
-| 
+| This file lets you define default values to be passed into views
+| when calling MY_Controller's render() function.
+|
 | See example and detailed explanation from:
 | 	/application/config/ci_bootstrap_example.php
 */
@@ -36,21 +36,35 @@ $config['ci_bootstrap'] = array(
 		),
 		'foot'	=> array(
 			'assets/dist/frontend/lib.min.js',
-			'assets/dist/frontend/app.min.js'
+			'assets/dist/frontend/app.min.js',
+			'assets/dist/js/jquery-2.1.4.min.js',
+			'assets/dist/js/bootstrap.js',
+			'assets/dist/js/lightGallery.js',
+			'assets/dist/js/SmoothScroll.min.js',
+			'assets/dist/js/move-top.js',
+			'assets/dist/js/easing.js'
 		),
 	),
 
 	// Default stylesheets to embed at page head
 	'stylesheets' => array(
+		'all' => array(
+			'assets/dist/css/flexslider.css',
+			'assets/dist/css/lightGallery.css',
+			'assets/dist/css/bootstrap.css',
+			'assets/dist/css/style.css',
+			'assets/dist/css/font-awesome.css',
+			'http://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese',
+			'http://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;subset=latin-ext,vietnamese'
+		),
 		'screen' => array(
-			'assets/dist/frontend/lib.min.css',
-			'assets/dist/frontend/app.min.css'
+
 		)
 	),
 
 	// Default CSS class for <body> tag
 	'body_class' => '',
-	
+
 	// Multilingual settings
 	'languages' => array(
 		'default'		=> 'en',
@@ -60,13 +74,9 @@ $config['ci_bootstrap'] = array(
 				'label'	=> 'English',
 				'value'	=> 'english'
 			),
-			'zh' => array(
-				'label'	=> '繁體中文',
-				'value'	=> 'traditional-chinese'
-			),
-			'cn' => array(
-				'label'	=> '简体中文',
-				'value'	=> 'simplified-chinese'
+			'ru' => array(
+				'label'	=> 'Russian',
+				'value'	=> 'russian'
 			),
 			'es' => array(
 				'label'	=> 'Español',
@@ -98,7 +108,7 @@ $config['ci_bootstrap'] = array(
 		'from_email'		=> '',
 		'from_name'			=> '',
 		'subject_prefix'	=> '',
-		
+
 		// Mailgun HTTP API
 		'mailgun_api'		=> array(
 			'domain'			=> '',
