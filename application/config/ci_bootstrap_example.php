@@ -30,10 +30,10 @@ $config['ci_bootstrap'] = array(
 	*/
 
 	// Site name
-	'site_name' => 'CI Bootstrap 3',
+	'site_name' => 'Barbershop',
 
 	// Default page title prefix
-	'page_title_prefix' => 'CI Bootstrap 3 - ',
+	'page_title_prefix' => 'Peter\'s Barbershop - ',
 
 	// Default page title
 	// (set empty then MY_Controller will automatically generate one based on controller / action)
@@ -42,9 +42,9 @@ $config['ci_bootstrap'] = array(
 	// Default meta data
 	// (name => content)
 	'meta_data'	=> array(
-		'author'		=> 'Michael Chan (https://github.com/waifung0207)',
-		'description'	=> 'CI Bootstrap 3',
-		'keywords'		=> 'PHP,CodeIgniter,CRUD'
+		'author'		=> 'Dumitru Patron (https://github.com/patrondumitru)',
+		'description'	=> 'Peter\'s Barbershop',
+		'keywords'		=> 'Peter\'s Barbershop'
 	),
 
 	// Default scripts to embed at page head or end
